@@ -100,7 +100,8 @@ export default function Home() {
     //   </footer>
     // </div>
     <div className="container">
-      <h1>Hi, I am starting my journey in next.js</h1>
+      <h1>Hi, I am starting my journey in next.js ye</h1>
+      <p>Hi Here I am starting a new project named apna dukan, so this is only to check that git is working or not</p>
     </div>
   );
 }
