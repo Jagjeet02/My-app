@@ -1,0 +1,42 @@
+h1{
+    font-size: 32px;
+}
+h2{
+    font-size: 24px;
+}
+h3{
+    font-size: 22px;
+}
+h4{
+    font-size: 20px;
+}
+h5{
+    font-size: 18px;
+}
+p{
+    font-size: 16px;
+}
+
+$black : #000000;
+$white : #ffffff;
+$dark-green : #004D57;
+$light-green : #1ABC9C;
+$light-bg: #F5F5F5;
+
+.primary_btn{
+    font-size: 18px;
+    color: $white;
+    background-color: $light-green;
+    border: none;
+    border-radius: 22px;
+    padding: 8px 20px;
+}
+
+.secondary_btn{
+    font-size: 18px;
+    color: $black;
+    background-color: $white;
+    border: 1px solid $light-green;
+    border-radius: 22px;
+    padding: 8px 20px;
+}

@@ -1,0 +1,64 @@
+@use './variables' as *;
+
+.signup_container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .signup_form{
+        border: 1px solid $black;
+        border-radius: 15px;
+        padding: 25px;
+        max-width: 352px;
+        width: 100%;
+        .login{
+            text-align: end;
+            margin-bottom: 25px;
+        }
+        .signup_head{
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form_inputs{
+            display: flex;
+            flex-direction: column;
+
+            input{
+            padding: 10px;
+            border: 1px solid $black;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        }
+        .signup_btn{
+            width: 100%;    
+        }
+        .or-line{
+            display: block;
+            text-align: center;
+            position: relative;
+            margin-block: 15px;
+            &::after{
+                content: "";
+                background-color: $black;
+                width: 39%;
+                height: 1.5px;
+                position: absolute;
+                top: 50%;
+                left: 0;
+
+            }
+            &::before{
+                content: "";
+                background-color: $black;
+                width: 39%;
+                height: 1.5px;
+                position: absolute;
+                top: 50%;
+                right: 0;
+
+            }
+        }
+    }
+}
