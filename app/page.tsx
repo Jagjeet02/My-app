@@ -6,7 +6,7 @@ export default function Signup() {
     return(
         <div className="signup_container">
             <form action="" className="signup_form">
-              <h4 className="login">Login</h4>
+              <Link href="./login"><h4 className="login">Login</h4></Link>
               <h4 className="signup_head">Sign Up</h4>
               <div className="form_inputs">
                 <input type="text" placeholder="Full Name"/>
