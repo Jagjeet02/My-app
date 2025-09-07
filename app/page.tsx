@@ -14,12 +14,12 @@ export default function Signup() {
                 <input type="password" placeholder="Password"/>
                 <input type="password" placeholder="Confirm Password"/>
               </div>
-              <Link href="./welcome"><button className="signup_btn primary_btn">Sign Up</button></Link>
+              <Link href="./select"><button className="signup_btn primary_btn">Sign Up</button></Link>
               <span className="or-line">OR</span>
               <div className="other_signup_options">
-                <Link href=""><img src="" alt="" /></Link>
-                <Link href=""><img src="" alt="" /></Link>
-                <Link href=""><img src="" alt="" /></Link>
+                <Link href=""><img src="./google.png" alt="google" /></Link>
+                <Link href=""><img src="./facebook.png" alt="" /></Link>
+                <Link href=""><img src="./twitter.png" alt="" /></Link>
               </div>
             </form>
         </div>

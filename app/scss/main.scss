@@ -1,9 +1,192 @@
 // main.scss
-@use './variables' as *; 
+@use './variables' as *;
 @use './home';
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.signup_container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../../public/splash_bg.png");
+
+    .signup_form {
+        border-radius: 15px;
+        padding: 25px;
+        max-width: 352px;
+        width: 100%;
+        margin: 25px;
+        position: relative;
+        z-index: 1;
+        color: $white;
+        ::before{
+            position: absolute;
+            content: " ";
+            background-color: white;
+            inset: 0;
+            z-index: -1;
+            border-radius: 15px;
+            opacity: 0.041;
+
+        }
+        .login {
+            text-align: end;
+            margin-bottom: 25px;
+        }
+
+        .signup_head {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form_inputs {
+            display: flex;
+            flex-direction: column;
+
+            input {
+                padding: 10px;
+                border: 1px solid $black;
+                margin-bottom: 15px;
+                width: 100%;
+            }
+        }
+
+        .signup_btn {
+            width: 100%;
+        }
+
+        .or-line {
+            display: block;
+            text-align: center;
+            position: relative;
+            margin-block: 15px;
+
+            &::after {
+                content: "";
+                background-color: $black;
+                width: 39%;
+                height: 1.5px;
+                position: absolute;
+                top: 50%;
+                left: 0;
+
+            }
+
+            &::before {
+                content: "";
+                background-color: $black;
+                width: 39%;
+                height: 1.5px;
+                position: absolute;
+                top: 50%;
+                right: 0;
+
+            }
+        }
+
+        .other_signup_options {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+    }
+}
+
+.selection_container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .selection_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 440px;
+        width: 100%;
+        padding: 25px;
+        border: 1px solid black;
+        border-radius: 15px;
+        margin: 25px;
+
+        h4 {
+            margin-bottom: 20px;
+        }
+
+        .or-line {
+            display: block;
+            text-align: center;
+            position: relative;
+            margin-block: 15px;
+            width: 100%;
+
+            &::after {
+                content: "";
+                background-color: $black;
+                width: 39%;
+                height: 1.5px;
+                position: absolute;
+                top: 50%;
+                left: 0;
+            }
+
+            &::before {
+                content: "";
+                background-color: $black;
+                width: 39%;
+                height: 1.5px;
+                position: absolute;
+                top: 50%;
+                right: 0;
+
+            }
+        }
+
+        .choose_button {
+            width: 100%;
+
+            button {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.welcome_container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .welcome_box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 440px;
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 15px;
+        margin: 25px;
+        padding: 25px;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+        h4{
+            margin-block: 20px;
+        }
+        .choose_button {
+            width: 100%;
+
+            button {
+                width: 100%;
+            }
+        }
+    }
 }

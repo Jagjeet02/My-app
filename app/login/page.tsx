@@ -11,12 +11,12 @@ export default function Login() {
                 <input type="email" placeholder="Email"/>
                 <input type="password" placeholder="Password"/>
               </div>
-              <Link href="./welcome"><button className="signup_btn primary_btn">Login</button></Link>
+              <Link href="./home"><button className="signup_btn primary_btn">Login</button></Link>
               <span className="or-line">OR</span>
               <div className="other_signup_options">
-                <Link href=""><img src="" alt="" /></Link>
-                <Link href=""><img src="" alt="" /></Link>
-                <Link href=""><img src="" alt="" /></Link>
+                <Link href=""><img src="./google.png" alt="google" /></Link>
+                <Link href=""><img src="./facebook.png" alt="" /></Link>
+                <Link href=""><img src="./twitter.png" alt="" /></Link>
               </div>
             </form>
         </div>

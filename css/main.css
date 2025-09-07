@@ -29,6 +29,7 @@ p {
   border: none;
   border-radius: 22px;
   padding: 8px 20px;
+  cursor: pointer;
 }
 
 .secondary_btn {
@@ -38,6 +39,13 @@ p {
   border: 1px solid #1ABC9C;
   border-radius: 22px;
   padding: 8px 20px;
+  cursor: pointer;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .signup_container {
@@ -46,13 +54,26 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: url("../../public/splash_bg.png");
 }
 .signup_container .signup_form {
-  border: 1px solid #000000;
   border-radius: 15px;
   padding: 25px;
   max-width: 352px;
   width: 100%;
+  margin: 25px;
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+}
+.signup_container .signup_form ::before {
+  position: absolute;
+  content: " ";
+  background-color: white;
+  inset: 0;
+  z-index: -1;
+  border-radius: 15px;
+  opacity: 0.041;
 }
 .signup_container .signup_form .login {
   text-align: end;
@@ -99,9 +120,90 @@ p {
   top: 50%;
   right: 0;
 }
+.signup_container .signup_form .other_signup_options {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.selection_container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.selection_container .selection_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 440px;
+  width: 100%;
+  padding: 25px;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: 25px;
+}
+.selection_container .selection_box h4 {
+  margin-bottom: 20px;
+}
+.selection_container .selection_box .or-line {
+  display: block;
+  text-align: center;
+  position: relative;
+  margin-block: 15px;
+  width: 100%;
+}
+.selection_container .selection_box .or-line::after {
+  content: "";
+  background-color: #000000;
+  width: 39%;
+  height: 1.5px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.selection_container .selection_box .or-line::before {
+  content: "";
+  background-color: #000000;
+  width: 39%;
+  height: 1.5px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+}
+.selection_container .selection_box .choose_button {
+  width: 100%;
+}
+.selection_container .selection_box .choose_button button {
+  width: 100%;
+}
+
+.welcome_container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome_container .welcome_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 440px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin: 25px;
+  padding: 25px;
+}
+.welcome_container .welcome_box h2 {
+  margin-bottom: 20px;
+}
+.welcome_container .welcome_box h4 {
+  margin-block: 20px;
+}
+.welcome_container .welcome_box .choose_button {
+  width: 100%;
+}
+.welcome_container .welcome_box .choose_button button {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
